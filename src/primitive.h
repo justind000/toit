@@ -61,7 +61,8 @@ namespace toit {
   M(math,    MODULE_MATH)                    \
   M(x509,    MODULE_X509)                    \
   M(rpc,     MODULE_RPC)                     \
-
+ M(provision,     MODULE_PROVISION)          \
+ 
 #define MODULE_CORE(PRIMITIVE)               \
   PRIMITIVE(print_string_on_stdout, 1)       \
   PRIMITIVE(print_string_on_stderr, 1)       \
@@ -534,6 +535,9 @@ namespace toit {
   PRIMITIVE(skip, 1)                         \
   PRIMITIVE(close, 2)                        \
 
+#define MODULE_PROVISION(PRIMITIVE)          \
+  PRIMITIVE(init, 5)                         \
+  
 // ----------------------------------------------------------------------------
 
 #define MODULE_IMPLEMENTATION_PRIMITIVE(name, arity)                \

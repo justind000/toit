@@ -92,5 +92,9 @@ include_directories(
   $ENV{IDF_PATH}/components/bt/host/nimble/nimble/nimble/host/util/include
   $ENV{IDF_PATH}/components/bt/include/esp32/include
   $ENV{IDF_PATH}/components/bt/host/nimble/nimble/nimble/host/services/gap/include
+  $ENV{IDF_PATH}/components/protocomm/include/common
+  $ENV{IDF_PATH}/components/protocomm/include/security
+  $ENV{IDF_PATH}/components/protocomm/include/transports
+  $ENV{IDF_PATH}/components/wifi_provisioning/include
   ${SKDCONFIG_INCLUDE_DIR}
   )
