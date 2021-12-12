@@ -1,13 +1,13 @@
-// Copyright (C) 2021 Justin Decker
+// Copyright (C) 2021 Toitware ApS.
 // Use of this source code is governed by a Zero-Clause BSD license that can
 // be found in the examples/LICENSE file.
 
-import .provision
+import provision
 
 main:
   print "starting provisioning"
-  provision := Provision.ap "PROV_ap"
-  //provision := Provision.ble "PROV_ble"
+  provision := provision.AP "PROV_ap"
+  //provision := Provision.BLE "PROV_ble"
   ret := provision.start
   print (ret ? "Provisioning success" : "Provisioning failed")
 
